@@ -30,6 +30,13 @@ U_MAZE_EVAL = [[1, 1, 1, 1, 1],
                [1, G, G, G, 1],
                [1, 1, 1, 1, 1]]
 
+DOUBLE_MAZE = [[1, 1, 1, 1, 1, 1, 1],
+               [1, R, G, 1, R, G, 1],
+               [1, G, G, 1, G, G, 1],
+               [1, 1, 1, 1, 1, 1, 1]]
+
+
+
 UNREACHABLE_MAZE = [[1, 1, 1, 1, 1, 1, 1],
                     [1, R, G, G, 1, 0, 1],
                     [1, 1, 1, G, 1, 0, 1],
@@ -94,6 +101,8 @@ def make_maze(maze_layout_name, maze_size_scaling):
         maze_layout = U_MAZE
     elif maze_layout_name == "u_maze_eval":
         maze_layout = U_MAZE_EVAL
+    elif maze_layout_name == "double_maze":
+        maze_layout = DOUBLE_MAZE
     elif maze_layout_name == "unreachable_maze":
         maze_layout = UNREACHABLE_MAZE
     elif maze_layout_name == "big_maze":
